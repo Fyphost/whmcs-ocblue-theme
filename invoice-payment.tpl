@@ -2,7 +2,7 @@
     {include file=$RSThemes['pages'][$templatefile]['fullPath']}
 {else}
     {if $showRemoteInput}
-        <div id="frmRemoteCardProcess" class="text-center" align="center">
+        <div id="frmRemoteCardProcess" class="text-center">
             {$remoteInput}
             <iframe name="ccframe" class="auth3d-area" width="90%" height="600" scrolling="auto" src="about:blank"></iframe>
         </div>

@@ -117,9 +117,9 @@
                                         {if $service.sslStatus}
                                             {assign var="awords" value="/"|explode:$service.sslStatus->getImagePath()} 
                                             {assign var="imageSSL" value=$awords|@end}
-                                            <img id="sslStatus{$service.id}" src="{$WEB_ROOT}/templates/{$template}/assets/img/ssl/12x12/{$imageSSL|replace:".png":".svg"}" data-toggle="tooltip" title="{$service.sslStatus->getTooltipContent()}" width="12px" class="ssl-status{$service.sslStatus->getClass()}"/>
+                                            <img id="sslStatus{$service.id}" src="{$WEB_ROOT}/templates/{$template}/assets/img/ssl/12x12/{$imageSSL|replace:".png":".svg"}" alt="" data-toggle="tooltip" title="{$service.sslStatus->getTooltipContent()}" width="12px" class="ssl-status{$service.sslStatus->getClass()}"/>
                                         {elseif !$service.isActive}
-                                            <img id="sslStatus{$service.id}" src="{$WEB_ROOT}/templates/{$template}/assets/img/ssl/12x12/ssl-inactive-domain.svg" data-toggle="tooltip" title="{lang key='sslState.sslInactiveService'}" width="12px" class="ssl-status"/>
+                                            <img id="sslStatus{$service.id}" src="{$WEB_ROOT}/templates/{$template}/assets/img/ssl/12x12/ssl-inactive-domain.svg" alt="" data-toggle="tooltip" title="{lang key='sslState.sslInactiveService'}" width="12px" class="ssl-status"/>
                                         {/if}
                                     </div>
                                     {/if}

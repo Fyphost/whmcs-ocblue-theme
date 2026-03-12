@@ -131,9 +131,9 @@
                                         {if $domain.sslStatus}
                                             {assign var="awords" value="/"|explode:$domain.sslStatus->getImagePath()}                                        
                                             {assign var="imageSSL" value=$awords|@end}
-                                            <img id="sslStatus{$domain.id}" src="{$WEB_ROOT}/templates/{$template}/assets/img/ssl/12x12/{$imageSSL|replace:".png":".svg"}" data-toggle="tooltip" title="{$domain.sslStatus->getTooltipContent()}" width="12px" data-maintemplate="{$template}" class="ssl-status {$domain.sslStatus->getClass()}"/>
+                                            <img id="sslStatus{$domain.id}" src="{$WEB_ROOT}/templates/{$template}/assets/img/ssl/12x12/{$imageSSL|replace:".png":".svg"}" alt="" data-toggle="tooltip" title="{$domain.sslStatus->getTooltipContent()}" width="12px" data-maintemplate="{$template}" class="ssl-status {$domain.sslStatus->getClass()}"/>
                                         {elseif !$domain.isActive}
-                                            <img id="sslStatus{$service.id}" src="{$WEB_ROOT}/templates/{$template}/assets/img/ssl/12x12/ssl-inactive-domain.svg" data-toggle="tooltip" title="{lang key='sslState.sslInactiveDomain'}" data-maintemplate="{$template}" width="12px" class="ssl-status"/>
+                                            <img id="sslStatus{$service.id}" src="{$WEB_ROOT}/templates/{$template}/assets/img/ssl/12x12/ssl-inactive-domain.svg" alt="" data-toggle="tooltip" title="{lang key='sslState.sslInactiveDomain'}" data-maintemplate="{$template}" width="12px" class="ssl-status"/>
                                         {/if}
                                     </span>
                                 {/if}

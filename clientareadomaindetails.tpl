@@ -83,7 +83,7 @@
                             <span class="list-info-text"> 
                                 {assign var="awords" value="/"|explode:$sslStatus->getImagePath()} 
                                 {assign var="imageSSL" value=$awords|@end}
-                                <img class="m-r-1x {$sslStatus->getClass()}" src="{$WEB_ROOT}/templates/{$template}/assets/img/ssl/{$imageSSL|replace:".png":".svg"}" width="18" data-type="domain" data-domain="{$domain}" data-showlabel="1"> 
+                                <img class="m-r-1x {$sslStatus->getClass()}" src="{$WEB_ROOT}/templates/{$template}/assets/img/ssl/{$imageSSL|replace:".png":".svg"}" alt="" width="18" data-type="domain" data-domain="{$domain}" data-showlabel="1"> 
                                 <span id="statusDisplayLabel">
                                     {if !$sslStatus->needsResync()}
                                         {$sslStatus->getStatusDisplayLabel()}
