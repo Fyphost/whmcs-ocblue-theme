@@ -47,7 +47,7 @@
                                 </tr> 
                             {foreachelse}
                                 <tr>
-                                    <td colspan="6" align="center">{$LANG.norecordsfound}</td>
+                                    <td colspan="6" class="text-center">{$LANG.norecordsfound}</td>
                                 </tr>
                             {/foreach}
                             <tr class="sub-total-row first">

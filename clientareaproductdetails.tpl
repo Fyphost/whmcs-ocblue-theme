@@ -341,7 +341,7 @@
                                                         <span class="list-info-title">{$LANG.sslState.sslStatus}</span>                                                
                                                         {assign var="awords" value="/"|explode:$sslStatus->getImagePath()} 
                                                         {assign var="imageSSL" value=$awords|@end}
-                                                        <img class="m-r-8 {$sslStatus->getClass()}" src="{$WEB_ROOT}/templates/{$template}/assets/img/ssl/12x12/{$imageSSL|replace:".png":".svg"}" width="12" data-type="service" data-domain="{$domain}" data-showlabel="1"> 
+                                                        <img class="m-r-8 {$sslStatus->getClass()}" src="{$WEB_ROOT}/templates/{$template}/assets/img/ssl/12x12/{$imageSSL|replace:".png":".svg"}" alt="" width="12" data-type="service" data-domain="{$domain}" data-showlabel="1"> 
                                                         <span id="statusDisplayLabel">
                                                             {if !$sslStatus->needsResync()}
                                                                 {$sslStatus->getStatusDisplayLabel()}

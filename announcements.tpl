@@ -34,7 +34,7 @@
                     {/if}
                     <div class="list-group-item-text">
                         {if $imgSrc}
-                            <img {$imgSrc} />
+                            <img {$imgSrc} alt=""/>
                         {/if}
                         {$announcement.summary}
                     </div>

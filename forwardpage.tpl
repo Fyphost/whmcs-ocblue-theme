@@ -6,7 +6,7 @@
             {include file="$template/includes/common/loader.tpl"}  
         </div>
         <h2 class="message-title">{$message}</h2>
-        <div id="frmPayment" align="center">
+        <div id="frmPayment" class="text-center">
             {$code}
             <form method="post" action="{if $invoiceid}viewinvoice.php?id={$invoiceid}{else}clientarea.php{/if}">
             </form>

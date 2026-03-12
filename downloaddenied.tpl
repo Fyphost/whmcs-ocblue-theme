@@ -11,7 +11,7 @@
         <form action="{$systemsslurl}cart.php?a=add" method="post">
             <input type="hidden" name="productid" value="{$serviceid}" />
             <input type="hidden" name="aid" value="{$addonid}" />
-            <p align="center"><input type="submit" value="{$LANG.supportAndUpdatesClickHereToRenew} &raquo;" class="btn" /></p>
+            <p class="text-center"><input type="submit" value="{$LANG.supportAndUpdatesClickHereToRenew} &raquo;" class="btn" /></p>
         </form>
     {else}
 
@@ -31,7 +31,7 @@
                 {elseif $aid}
                     <input type="hidden" name="gid" value="addons" />
                 {/if}
-                <p align="center"><input type="submit" value="{$LANG.ordernowbutton} &raquo;" class="btn" /></p>
+                <p class="text-center"><input type="submit" value="{$LANG.ordernowbutton} &raquo;" class="btn" /></p>
             </form>
         {/if}
 
