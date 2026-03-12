@@ -151,7 +151,7 @@
                 <td class="text-end">{$tax2}</td>
               </tr>
               {/if}
-              {if $credit neq '$0.00' and $credit neq '€0.00' and $credit}
+              {if $credit}
               <tr class="invoice-subtotal-row">
                 <td class="text-end">{$LANG.invoicescredit}</td>
                 <td class="text-end">{$credit}</td>

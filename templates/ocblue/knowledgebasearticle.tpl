@@ -12,7 +12,7 @@
       <div class="dashboard-card-body">
         {if $article.keywords}
         <div class="mb-3">
-          {foreach from=","| explode:$article.keywords item=kw}
+          {foreach from=$article.keywords|explode:',' item=kw}
             {if $kw}<span class="badge badge-info me-1">{$kw|trim}</span>{/if}
           {/foreach}
         </div>

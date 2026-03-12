@@ -69,9 +69,9 @@
       {foreach from=$descreplies key=num item=reply}
       <div class="ticket-reply-card mb-3 {if $reply.admin}ticket-reply-staff{/if} animate-on-scroll">
         <div class="ticket-reply-header">
-          <div class="ticket-reply-avatar {if $reply.admin}ticket-reply-avatar-staff{/if}">
-            {$reply.name|truncate:1:"":true}
-          </div>
+        <div class="ticket-reply-avatar {if $reply.admin}ticket-reply-avatar-staff{/if}">
+          {$reply.name|truncate:1:"":true}
+        </div>
           <div class="flex-grow-1">
             <div class="fw-semibold">{$reply.name}</div>
             <div class="small text-muted">{$reply.date}</div>
