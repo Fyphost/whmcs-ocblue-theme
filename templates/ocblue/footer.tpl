@@ -1,6 +1,37 @@
   </div>{* /container *}
 </main>{* /main-content *}
 
+{* Mobile bottom navigation (only for logged-in clients) *}
+{if $loggedin}
+<nav class="mobile-bottom-nav d-lg-none" aria-label="Mobile navigation">
+  <a href="{$WEB_ROOT}/clientarea.php"
+     class="mobile-bottom-nav-item {if $templatefile eq 'clientareahome'}active{/if}">
+    <i class="bi bi-speedometer2"></i>
+    <span>Dashboard</span>
+  </a>
+  <a href="{$WEB_ROOT}/clientarea.php?action=services"
+     class="mobile-bottom-nav-item {if $templatefile eq 'clientareaproducts'}active{/if}">
+    <i class="bi bi-server"></i>
+    <span>Services</span>
+  </a>
+  <a href="{$WEB_ROOT}/clientarea.php?action=invoices"
+     class="mobile-bottom-nav-item {if $templatefile eq 'clientareainvoices'}active{/if}">
+    <i class="bi bi-receipt"></i>
+    <span>Billing</span>
+  </a>
+  <a href="{$WEB_ROOT}/supporttickets.php"
+     class="mobile-bottom-nav-item {if $templatefile eq 'supportticketslist'}active{/if}">
+    <i class="bi bi-headset"></i>
+    <span>Support</span>
+  </a>
+  <a href="{$WEB_ROOT}/clientarea.php?action=details"
+     class="mobile-bottom-nav-item {if $templatefile eq 'clientareadetails'}active{/if}">
+    <i class="bi bi-person-circle"></i>
+    <span>Account</span>
+  </a>
+</nav>
+{/if}
+
 {* Footer *}
 <footer class="site-footer">
   <div class="container">
