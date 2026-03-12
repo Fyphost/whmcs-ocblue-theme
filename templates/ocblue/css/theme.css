@@ -1291,3 +1291,426 @@ body.modern-blue-theme {
     text-align: center;
   }
 }
+
+/* ---------------------------------------------------------------
+   28. Additional Badges
+--------------------------------------------------------------- */
+.badge-info {
+  background: #DBEAFE;
+  color: #1E40AF;
+}
+
+.badge-danger {
+  background: #FEE2E2;
+  color: #991B1B;
+}
+
+.badge-warning {
+  background: #FEF3C7;
+  color: #92400E;
+}
+
+.badge-success {
+  background: #D1FAE5;
+  color: #065F46;
+}
+
+/* ---------------------------------------------------------------
+   29. Invoice Page
+--------------------------------------------------------------- */
+.invoice-section-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-gray-500);
+  margin-bottom: 0.5rem;
+}
+
+.invoice-address {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--color-gray-700);
+  font-style: normal;
+}
+
+.invoice-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.invoice-meta-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-gray-500);
+}
+
+.invoice-meta-value {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-gray-800);
+}
+
+.invoice-subtotal-row td {
+  padding: 0.5rem 0.875rem;
+  border-bottom: 1px solid var(--color-gray-100);
+  color: var(--color-gray-600);
+  font-size: 0.9rem;
+}
+
+.invoice-total-row td {
+  padding: 0.875rem;
+  background: var(--color-gray-50);
+  border-top: 2px solid var(--color-gray-200);
+}
+
+/* ---------------------------------------------------------------
+   30. Ticket Reply Cards
+--------------------------------------------------------------- */
+.ticket-reply-card {
+  background: #ffffff;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.ticket-reply-card.ticket-reply-staff {
+  border-left: 3px solid var(--color-primary);
+  background: var(--color-primary-50);
+}
+
+.ticket-reply-header {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  padding: 1rem 1.25rem;
+  background: var(--color-gray-50);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.ticket-reply-staff .ticket-reply-header {
+  background: var(--color-primary-100);
+  border-bottom-color: var(--color-primary-200);
+}
+
+.ticket-reply-avatar {
+  width: 40px;
+  height: 40px;
+  background: var(--color-gray-300);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--color-gray-700);
+  font-size: 1rem;
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+
+.ticket-reply-avatar-staff {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  color: #ffffff;
+}
+
+.ticket-reply-body {
+  padding: 1.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--color-gray-700);
+}
+
+.ticket-reply-body p:last-child {
+  margin-bottom: 0;
+}
+
+.ticket-reply-attachments {
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid var(--color-gray-200);
+  background: var(--color-gray-50);
+}
+
+/* ---------------------------------------------------------------
+   31. Announcement Cards
+--------------------------------------------------------------- */
+.announcement-card {
+  background: #ffffff;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.announcement-card:hover {
+  border-color: var(--color-primary-300);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.announcement-date {
+  font-size: 0.8125rem;
+  color: var(--color-gray-500);
+  margin-bottom: 0.75rem;
+}
+
+.announcement-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.announcement-title a {
+  color: var(--color-gray-800);
+  transition: var(--transition);
+}
+
+.announcement-title a:hover {
+  color: var(--color-primary);
+}
+
+.announcement-excerpt {
+  font-size: 0.9rem;
+  color: var(--color-gray-600);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.announcement-body {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: var(--color-gray-700);
+}
+
+.announcement-body img {
+  max-width: 100%;
+  border-radius: var(--radius-md);
+}
+
+.announcement-body a {
+  color: var(--color-primary);
+}
+
+/* ---------------------------------------------------------------
+   32. Knowledgebase
+--------------------------------------------------------------- */
+.kb-article-link {
+  border-radius: var(--radius-sm) !important;
+  transition: var(--transition);
+}
+
+.kb-article-link:hover {
+  background: var(--color-primary-50) !important;
+  color: var(--color-primary) !important;
+}
+
+.kb-article-link:hover .bi-chevron-right {
+  color: var(--color-primary) !important;
+}
+
+.kb-article-body {
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  color: var(--color-gray-700);
+}
+
+.kb-article-body h1,
+.kb-article-body h2,
+.kb-article-body h3,
+.kb-article-body h4 {
+  color: var(--color-gray-800);
+  font-weight: 600;
+  margin-top: 1.5em;
+}
+
+.kb-article-body img {
+  max-width: 100%;
+  border-radius: var(--radius-md);
+}
+
+.kb-article-body pre,
+.kb-article-body code {
+  background: var(--color-gray-100);
+  border-radius: var(--radius-sm);
+  font-size: 0.875em;
+}
+
+.kb-article-body pre {
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.kb-article-body code {
+  padding: 0.125em 0.375em;
+}
+
+.kb-article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+.kb-article-body th,
+.kb-article-body td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color-gray-200);
+}
+
+.kb-article-body th {
+  background: var(--color-gray-100);
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------------
+   33. Server Status
+--------------------------------------------------------------- */
+.server-status-card {
+  background: #ffffff;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.server-status-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.server-status-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.indicator-online {
+  background: var(--color-success);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+.indicator-offline {
+  background: var(--color-danger);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}
+
+/* ---------------------------------------------------------------
+   34. Wide login card (Registration)
+--------------------------------------------------------------- */
+.login-card-wide {
+  max-width: 100%;
+}
+
+.login-wrapper-wide {
+  max-width: 600px;
+}
+
+/* override login-wrapper width for registration page */
+.login-page .login-wrapper:has(.login-card-wide) {
+  max-width: 600px;
+}
+
+/* ---------------------------------------------------------------
+   35. Mobile bottom navigation (client area)
+--------------------------------------------------------------- */
+@media (max-width: 991.98px) {
+  .mobile-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    border-top: 1px solid var(--color-gray-200);
+    display: flex;
+    z-index: 1040;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .mobile-bottom-nav-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem 0.25rem;
+    text-decoration: none;
+    color: var(--color-gray-500);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    transition: var(--transition);
+    gap: 0.25rem;
+  }
+
+  .mobile-bottom-nav-item i {
+    font-size: 1.25rem;
+  }
+
+  .mobile-bottom-nav-item.active,
+  .mobile-bottom-nav-item:hover {
+    color: var(--color-primary);
+  }
+
+  /* Add padding to main content to avoid overlap with mobile nav */
+  body.client-area-page .main-content {
+    padding-bottom: 5rem;
+  }
+}
+
+/* ---------------------------------------------------------------
+   36. Additional mobile fixes
+--------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+  .dashboard-card-header {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .ticket-reply-header {
+    flex-wrap: wrap;
+  }
+
+  .table-responsive {
+    border: none;
+  }
+
+  .dashboard-table tbody td,
+  .dashboard-table thead th {
+    padding: 0.625rem 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .service-item {
+    flex-wrap: wrap;
+  }
+
+  .invoice-subtotal-row td,
+  .invoice-total-row td {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .login-card-wide {
+    padding: 1.5rem 1rem;
+  }
+
+  .announcement-card {
+    padding: 1.25rem;
+  }
+
+  .ticket-reply-body {
+    padding: 1rem;
+  }
+
+  .ticket-reply-header {
+    padding: 0.75rem 1rem;
+  }
+}

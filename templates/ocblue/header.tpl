@@ -3,7 +3,7 @@
 <head>
   {include file="$template/includes/head.tpl"}
 </head>
-<body class="modern-blue-theme">
+<body class="modern-blue-theme{if $loggedin} client-area-page{/if}">
 
 {include file="$template/includes/navbar.tpl"}
 
